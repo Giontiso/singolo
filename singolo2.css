@@ -47,7 +47,7 @@ body, html {
     border: 1px solid #666d89;
     border-radius: 4px;
     padding: 5px 6px 3px 6px;
-    margin: 17px 8px 20px 2px;
+    margin: 17px 8px 19px 2px;
     letter-spacing: -0.01em;
     font-weight: 700;
 }
@@ -61,6 +61,80 @@ body, html {
 .images-portfolio img {
     margin: 0 18px 19px 0;
 }
-.images-portfolio {
-    /* margin-bottom: 44px; */
+.images-portfolio>img:nth-child(n+13) {
+    display: none;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 0 40px 69px 40px;
+    border-bottom: 6px solid #fff;
+}
+
+.about-portfolio h2 {
+    font-size: 3.1rem;
+    margin-top: 62px;
+    font-weight: 900;
+    padding: 0;
+}
+
+
+.about-portfolio p {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    letter-spacing: -0.016em;
+    line-height: 1.68;
+    font-weight: 100;
+    word-spacing: 2.8px;
+
+}
+
+.person-photo {
+    width: 300px;
+    height: 300px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.about-person {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 19px 0 0px;
+}
+
+.person-name {
+    font-family: 'Lato-Black';
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: justify;
+    letter-spacing: -0.029em;
+    word-spacing: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 900;
+}
+
+.person-text {
+    font-size: 1.2rem;
+    margin-top: 11px;
+    font-weight: 500;
+    letter-spacing: -0.019em;
+    line-height: 1.68;
+    word-spacing: 1.3px;
+}
+
+.social-container {
+    margin-left: 1px;
+    margin-top: 23px;
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
 }
