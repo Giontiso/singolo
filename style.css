@@ -1,10 +1,28 @@
 
+@font-face{
+    font-family: 'Lato';
+    Src: url("assets/fonts/Lato-Regular.ttf"); 
+    font-weight:900;
+}
+@font-face{
+    font-family: 'Lato-Bold';
+    Src: url("assets/fonts/Lato-Bold.ttf"); 
+    }
+@font-face{
+    font-family: 'Lato-Light';
+    Src: url("assets/fonts/Lato-Light.ttf"); 
+    }
+@font-face{
+    font-family: 'Lato-Black';
+    Src: url("assets/fonts/Lato-Black.ttf"); 
+    }
+
 body, html {
     display: flex;
     justify-content: center;
     font-size: 10px;
-    src: url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-    font-family: 'Lato';
+    /* src: url('https://fonts.googleapis.com/css?family=Lato&display=swap'); */
+    font-family: "Lato", sans-serif;
 }
 
 .wrapper {
@@ -30,15 +48,19 @@ body, html {
 }
 
 .logo {
+    font-family: Lato-Bold;
     padding: 0px 0px 0px 40px;
-    font-size: 2.5rem;
-    /* letter-spacing: -1.1px; */
+    font-size: 2.55rem;
+    letter-spacing: -0.02em;
+    font-weight: 500;
 }
 
 .logo h1 sup {
     padding: 0px;
     margin: 0px;
     color: #dd655f;
+    font-weight: 700;
+    /* letter-spacing: -0.1em; */
 }
 
 .nav {
@@ -168,7 +190,7 @@ img.phone-image.phone-shadow-h {
 
 .our-services {
     display: flex;
-    padding: 40px 0 30px 0;
+    padding: 40px 0 32px 0;
     color: #767e9e;
     background-color: #F2F2F2;
     border-bottom: 6px solid #ffffff;
@@ -179,16 +201,16 @@ img.phone-image.phone-shadow-h {
 }
 
 .services-description h2{
-    font-size: 3.2rem;
+    font-family: Lato-Black;
+    font-size: 3.1rem;
     padding: 0.7333em 0 0.4333em;
-    font-weight: 900;
+    /* font-weight: bold; */
     letter-spacing: -0.02em;
-    
 
 }
 
 .services-description p {
-    padding-top: 0.2em;
+    padding-top: 0.3em;
     margin: 0 0 45px 0px;
     font-size: 19px;
     line-height: 3rem;
@@ -223,16 +245,18 @@ img.phone-image.phone-shadow-h {
 .services-icons img{
     height: 56px;
     width: 56px;
-    margin: 0 10px 0 0;
+    margin: 2px 10px 0 0;
     object-fit: none;
     border-radius: 50%;
     border: 2px solid #666d89;
 }
 .services-annotations {
     width: 220px;
+    font-family: Lato;;
 }
 
 .services-annotations h2{
+    font-family: Lato-Black;
     font-size: 1.9rem;
     line-height: 2rem;
     letter-spacing: -0.02em;
@@ -240,12 +264,14 @@ img.phone-image.phone-shadow-h {
 }
 
 .services-annotations p{
-    padding-top: 10px;
+    font-family: Lato;
+    padding-top: 9px;
     font-size: 1.2rem;
     line-height: 2.1rem;
-    /* letter-spacing: 0.2em; */
+    letter-spacing: 0.01em;
     overflow: hidden;
     text-align: justify;
+    word-break: break-all;
 }
 
 
@@ -271,16 +297,17 @@ img.phone-image.phone-shadow-h {
 }
 
 .title-portfolio h2 {
-    font-size: 3.1rem;
+    font-family: Lato-Black;
+    font-size: 3rem;
     /* line-height: 1; */
-    margin-top: 66px;
+    margin-top: 62px;
     font-weight: 900;
     padding: 0;
 }
 
 .title-portfolio p {
     font-size: 1.8rem;
-    margin-top: 26px;
+    margin-top: 27px;
     letter-spacing: -0.012em;
 }
 
@@ -316,22 +343,25 @@ img.phone-image.phone-shadow-h {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    padding: 0 40px 69px 40px;
+    padding: 0 40px 66px 40px;
     border-bottom: 6px solid #fff;
+    color: #666d89;
 }
 
 .about-portfolio h2 {
+    font-family: Lato-Black;
     font-size: 3.1rem;
     margin-top: 62px;
     font-weight: 900;
     padding: 0;
+    letter-spacing: -0.028em;
 }
 
 
 .about-portfolio p {
     font-size: 1.8rem;
     margin-top: 20px;
-    letter-spacing: -0.016em;
+    letter-spacing: -0.022em;
     line-height: 1.68;
     font-weight: 100;
     word-spacing: 2.8px;
@@ -353,13 +383,13 @@ img.phone-image.phone-shadow-h {
 .about-person {
     display: flex;
     flex-direction: column;
-    margin: 45px 19px 0 0px;
+    margin: 45px 20px 0 0px;
 }
 
 .person-name {
     font-family: 'Lato-Black';
-    font-size: 20px;
-    margin-top: 15px;
+    font-size: 19px;
+    margin-top: 16px;
     text-align: justify;
     letter-spacing: -0.029em;
     word-spacing: -1px;
@@ -374,13 +404,13 @@ img.phone-image.phone-shadow-h {
     margin-top: 11px;
     font-weight: 500;
     letter-spacing: -0.019em;
-    line-height: 1.68;
+    line-height: 1.74;
     word-spacing: 1.3px;
 }
 
 .social-container {
     margin-left: 1px;
-    margin-top: 23px;
+    margin-top: 25px;
     width: 152px;
     display: flex;
     justify-content: space-between;
@@ -391,7 +421,7 @@ img.phone-image.phone-shadow-h {
 
 .get-a-quote{
     background-color: rgb(240, 108, 100);
-    color:rgb(255, 255, 255);
+    color: #f0d8d9;
     height: 648px;
     border-bottom: 6px solid rgb(234, 103, 107);
 }
@@ -401,14 +431,14 @@ img.phone-image.phone-shadow-h {
     
     
 }
-.caption{
-    padding-top: 60px;
+.get-a-quote-container h2{
+    padding-top: 62px;
     margin: 0;
     font-size: 30px;
     font-family: 'Lato-Black';
 }
-.text-style1{
-    padding-top: 17px;
+.get-a-quote-container p{
+    padding-top: 21px;
     margin: 0;
     font-size: 18px;
     font-family: 'Lato-Light';
@@ -422,35 +452,47 @@ img.phone-image.phone-shadow-h {
     justify-content: space-between;
 }
 .get-a-quote__form{
+    /* color: rgb(102, 109, 137); */
     width: 620px;
     padding-top: 41px;
 }
+.get-a-quote__form input::-moz-placeholder { color:#f48c8f; }
+input::-webkit-input-placeholder { color: #f48c8f; }
+textarea::-webkit-input-placeholder { color:  #f48c8f; }
+textarea:-moz-placeholder { color: red; }
+
 .get-a-quote__contact{
     width: 300px;
-    padding-top: 41px;
+    padding-top: 44px;
 }
 h3{
     font-size: 18px;
     font-family: 'Lato-Black';
     margin: 0;
 }
-.text-style2{
+.get-a-quote__contact p,
+.input-container p{
     margin: 0;
     font-size: 12px;
     font-family: 'Lato';
     padding-top: 10px;
-    line-height: 1.79;
+    line-height: 1.82;
     text-align: justify;
 }
 .contact-line{
-    padding-top: 26px;
+    padding-top: 25px;
 }
+
+.contact-line p {
+    padding-top: 0px;
+}
+
 .contact-line__block{
     padding-left: 0px;
     margin: 0;
     font-size: 12px;
     font-family: 'Lato';
-    padding-bottom: 7px;
+    /* padding-bottom: 2px; */
 }
 
 .contact-line__block a {
@@ -459,7 +501,7 @@ h3{
 }
 
 .block-location{
-    padding-left: 3px;
+    padding-left: 2px;
 }
 .ico{
     padding-right: 9px;
@@ -538,3 +580,8 @@ textarea::placeholder{
     padding-left: 12px;
     padding-top: 9px;
 }
+
+textarea:-moz-placeholder { color: red; }
+.get-a-quote__form input::-moz-placeholder { color:#f48c8f; }
+input::-webkit-input-placeholder { color: #f48c8f; }
+textarea::-webkit-input-placeholder { color:  #f48c8f; }
