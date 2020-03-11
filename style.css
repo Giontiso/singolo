@@ -17,6 +17,9 @@
     Src: url("assets/fonts/Lato-Black.ttf"); 
     }
 
+
+
+
 body, html {
     display: flex;
     justify-content: center;
@@ -66,10 +69,12 @@ body, html {
 .nav {
     display: flex;
     width: 345px;
+    font-family: "Lato";
     font-size: 1.19rem;
     margin: 9px 68px 0 0;
     /* background-color: rebeccapurple; */
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav li a {
@@ -88,7 +93,13 @@ body, html {
 }
 
 .nav li:not(:first-child) {
-    margin-left: 30px;
+    margin-left: 14px;
+}
+
+.dots {
+    list-style-type: none;
+    margin-bottom: 5px;
+    color: #494e62;
 }
 
 li {
@@ -157,9 +168,11 @@ img.phone-image.phone-shadow-h {
 
 .arrow-left {
     margin-left: 42px;
+    margin-top: -6px;
 }
 
 .arrow-right {
+    margin-top: -6px;
     margin-right: 40px;
     transform: rotate(180deg);
 }
@@ -212,7 +225,7 @@ img.phone-image.phone-shadow-h {
 .services-description p {
     padding-top: 0.3em;
     margin: 0 0 45px 0px;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 3rem;
     font-weight: 300;
     text-align: justify;
@@ -233,7 +246,7 @@ img.phone-image.phone-shadow-h {
     flex-wrap: nowrap;
     flex: 1 1 1px;
     /* background-color: brown; */
-    padding: 0px 0px 30px 20px;
+    padding: 0px 0px 25px 20px;
     justify-content: space-between;
     width: 320px;
 }
@@ -260,15 +273,17 @@ img.phone-image.phone-shadow-h {
     font-size: 1.9rem;
     line-height: 2rem;
     letter-spacing: -0.02em;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 
 .services-annotations p{
     font-family: Lato;
+    height: 68px;
     padding-top: 9px;
     font-size: 1.2rem;
     line-height: 2.1rem;
     letter-spacing: 0.01em;
+    text-overflow: ellipsis;
     overflow: hidden;
     text-align: justify;
     word-break: break-all;
@@ -301,7 +316,7 @@ img.phone-image.phone-shadow-h {
     font-size: 3rem;
     /* line-height: 1; */
     margin-top: 62px;
-    font-weight: 900;
+    /* font-weight: 900; */
     padding: 0;
 }
 
@@ -352,18 +367,19 @@ img.phone-image.phone-shadow-h {
     font-family: Lato-Black;
     font-size: 3.1rem;
     margin-top: 62px;
-    font-weight: 900;
+    /* font-weight: 900; */
     padding: 0;
     letter-spacing: -0.028em;
 }
 
 
 .about-portfolio p {
+    font-family: "Lato";
     font-size: 1.8rem;
     margin-top: 20px;
     letter-spacing: -0.022em;
     line-height: 1.68;
-    font-weight: 100;
+    /* font-weight: 100; */
     word-spacing: 2.8px;
 
 }
@@ -384,7 +400,16 @@ img.phone-image.phone-shadow-h {
     display: flex;
     flex-direction: column;
     margin: 45px 20px 0 0px;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
 }
+
+.about-person h3 {
+    width: 300px;
+        overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 .person-name {
     font-family: 'Lato-Black';
@@ -396,7 +421,7 @@ img.phone-image.phone-shadow-h {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 
 .person-text {
@@ -406,6 +431,10 @@ img.phone-image.phone-shadow-h {
     letter-spacing: -0.019em;
     line-height: 1.74;
     word-spacing: 1.3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 300px;
+    height: 40px;
 }
 
 .social-container {
@@ -456,10 +485,32 @@ img.phone-image.phone-shadow-h {
     width: 620px;
     padding-top: 41px;
 }
-.get-a-quote__form input::-moz-placeholder { color:#f48c8f; }
-input::-webkit-input-placeholder { color: #f48c8f; }
+
+/* .form-def input {
+    padding-left: 10px;
+} */
+
+/* input::-moz-placeholder {  padding-left: 10px;} */
+
+/* input[type="text"]:-moz-placeholder { color:#f48c8f;
+    padding-left: 10px;
+    width: 609px; 
+}
+    
+input[type="email"]:-moz-placeholder{ color:#f48c8f;
+        padding-left: 10px;
+        width: 609px; 
+}  */
+
+
+
+/* input::-moz-placeholder { color:#f48c8f;
+padding-left: 100px; } */
+
+
+/* input::-webkit-input-placeholder { color: #f48c8f; }
 textarea::-webkit-input-placeholder { color:  #f48c8f; }
-textarea:-moz-placeholder { color: red; }
+textarea:-moz-placeholder { color: red; } */
 
 .get-a-quote__contact{
     width: 300px;
@@ -519,11 +570,12 @@ textarea {
 }
 input{
     margin-bottom: 16px;
-    height: 36px;
+    height: 38px;
     border-radius: 5px;
     width: 619px;
     background-color: rgb(214, 86, 79);
     border: none;
+    padding: 0px;
 }
 footer{
     color: rgb(102, 109, 137);
@@ -565,6 +617,7 @@ margin-right: -4px;
     border-radius: 5px;
     border: 0px solid white;
     color: white;
+    cursor: pointer;
 }
 
 ::placeholder {
@@ -581,7 +634,10 @@ textarea::placeholder{
     padding-top: 9px;
 }
 
-textarea:-moz-placeholder { color: red; }
+
 .get-a-quote__form input::-moz-placeholder { color:#f48c8f; }
 input::-webkit-input-placeholder { color: #f48c8f; }
 textarea::-webkit-input-placeholder { color:  #f48c8f; }
+textarea:-moz-placeholder { color: red; }
+
+
