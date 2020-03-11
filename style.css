@@ -166,14 +166,20 @@ img.phone-image.phone-shadow-h {
     transform: rotateY(180deg);
 }
 
+.arrow:hover{
+    opacity: 1;
+}
+
 .arrow-left {
     margin-left: 42px;
     margin-top: -6px;
+    opacity: 0.4;
 }
 
 .arrow-right {
     margin-top: -6px;
     margin-right: 40px;
+    opacity: 0.4;
     transform: rotate(180deg);
 }
 
@@ -445,6 +451,11 @@ img.phone-image.phone-shadow-h {
     justify-content: space-between;
 }
 
+.social-container a:hover{
+    opacity: 0.3;
+    color: blue;
+}
+
 
 /*////////////////////////////////////////////////////////////////////////*/
 
@@ -603,13 +614,20 @@ margin-right: -4px;
     height: 32px;
 
 }
-.social-net:hover{
+.social-net img:hover{
     cursor: pointer;
+    opacity: 0.3;
 }
+
 .form-button-submit{
     padding-left: 520px;
     padding-top: 10px;
 }
+
+.form-button-submit button:hover {
+    opacity: 0.3;
+}
+
 .button-submit{
     background-color: rgb(214, 86, 79);
     height: 36px;
